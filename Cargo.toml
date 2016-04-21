@@ -6,7 +6,6 @@ authors = ["Marcin Kopa <marcin.info@gmail.com>"]
 license = "MIT"
 description = "A CRC8 implementation"
 repository = "https://github.com/mkopa/rust-crc8"
-documentation = "https://mkopa.github.io/rust-crc8"
 readme = "README.md"
 keywords = ["crc", "crc8", "crc-8", "hash", "checksum"]
 exclude = [".*"]
