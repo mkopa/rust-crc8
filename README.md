@@ -1,7 +1,11 @@
 # rust-crc8
 A CRC8 implementation
 
-### Usage
+#### Installation
+
+Use [cargo package](https://crates.io/crates/crc8).
+
+#### Usage
 ```
 extern crate crc8;
 use crc8::*;
