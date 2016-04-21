@@ -1,10 +1,8 @@
-pub trait
-
 pub struct Crc8 {
         table : [u8; 256]
 }
 
-pub impl Crc8 {
+impl Crc8 {
         pub fn create_msb(polynomial : u8) -> Crc8 {
                 let msbit : u8 = 0x80;
                 let mut t : u8 = msbit;
@@ -35,12 +33,7 @@ pub impl Crc8 {
                 let mut table : [u8; 256] = [0; 256];
 
                 while i != 0 {
-                        if t & 1 != 0 {
-                                tmp = polynomial;
-                        }
-                        else {
-                                tmp = 0;
-                        }
+                        if t & 1 != 0 { tmp = polynomial; } else { tmp = 0; }
                         t = (t >> 1) ^ tmp;
                         j = 0;
                         while j < 256 {
