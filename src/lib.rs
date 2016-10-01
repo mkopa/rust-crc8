@@ -47,7 +47,7 @@ impl Crc8 {
                 return Crc8{ table : table };
         }
 
-        pub fn calc(&mut self, buffer : &[u8], length: i32, crc: u8) -> u8 {
+        pub fn calc(&self, buffer : &[u8], length: i32, crc: u8) -> u8 {
                 let mut i : i32 = 0;
                 let mut crc_tmp = crc;
 
